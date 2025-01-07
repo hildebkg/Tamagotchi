@@ -25,6 +25,14 @@ I personally assembled the ESP8266 version with Wemos D1 Mini on perf board, usi
 
 Use Platformio. Run `build` task to build for all platforms. Next, run the `Upload` task for a specific platform
 
+### Katy's notes: 
+#### Opening the project (Visual Studio Code)
+The PlatformIO home page can be accessed by clicking on the house icon in the bottom left toolbar. In the Quick Access window, click Open Project and navigate to the .ini file that corresponds to your desired project. Select this location to open the project. 
+#### Building the project
+Click on the checkmark icon in the bottom left toolbar to build the project. The first time I did this, I got an error saying I did not have a Java Development Kit installed. I installed JDK 22.01 and tried again with success.
+#### Uploading the project
+First, make sure you have the right PlatformIO Project Environment selected. Click on the folder icon in the lower left toolbar to switch environments. I have the rev A kit, so I selected "env:tamagotchi-kit-a (esp8266-tamagotchi)". Then, click on the right-pointing arrow icon in the bottom left toolbar to upload the project. 
+
 ### Additional notes
 - To activate your pet, you have to configure the clock by pressing the middle button. Otherwise, your pet will not be alive.
 - The emulator will save the game status every 5 minutes. You can change that by changing the AUTO_SAVE_MINUTES setting
